@@ -2,7 +2,7 @@ import React from 'react';
 import { FcAbout, FcBiotech, FcBusinessContact, FcHome, FcPortraitMode, FcReadingEbook, FcVideoProjector, FcVoicePresentation } from 'react-icons/fc';
 
 import './Menus.css';
-import profile from '../../Profile-pic/shreya.jpg';
+import profile from '../../assets/images/shreya.jpg';
 
 
 function Menus({ toggle }) {
