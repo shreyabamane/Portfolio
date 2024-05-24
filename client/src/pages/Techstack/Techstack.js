@@ -7,7 +7,7 @@ export function Techstack() {
     return (
         <>
             <div className='container techstack'>
-                <h2 className='col-12 mt- mb-1 text-center'>Technologies Stack</h2>
+                <h2 className='col-12 mt- mb-1 text-center text-uppercase'>Technologies Stack</h2>
                 <hr />
                 <p className='pb-3 text-center'>👉 including programming Langauges, frameworks, database, front-end and back-end tools, and APIs</p>
 
