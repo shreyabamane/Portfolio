@@ -2,10 +2,10 @@ import React from 'react';
 import { FcAbout, FcBiotech, FcBusinessContact, FcHome, FcPortraitMode, FcReadingEbook, FcVideoProjector, FcVoicePresentation } from 'react-icons/fc';
 
 import './Menus.css';
-import profile from '../../assets/images/shreya.jpg';
+import Profile from '../../assets/images/shreya.jpg';
 
 
-function Menus({ toggle }) {
+export function Menus({ toggle }) {
   return (
     <>
       {/* normal toggle
@@ -19,7 +19,7 @@ function Menus({ toggle }) {
       {toggle ? (
         <>
           <div className='navbar-profile-pic'>
-            <img src={profile} alt='profile pic'></img>
+            <img src={Profile} alt='profile pic'></img>
           </div>
 
           <div className='nav-items'>
@@ -96,4 +96,4 @@ function Menus({ toggle }) {
   )
 }
 
-export default Menus;
+

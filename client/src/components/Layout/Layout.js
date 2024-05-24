@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import './Layout.css';
-import Home from '../../pages/Home/Home';
 import { AiOutlineDoubleLeft,AiOutlineDoubleRight } from "react-icons/ai";
-import Menus from '../Menus/Menus';
 
-function Layout(){
+import './Layout.css';
+import { Home } from '../../pages/Home/Home';
+import { Menus } from '../Menus/Menus';
+
+export function Layout(){
 
     const [toggle, setToggle] = useState(true);
 
@@ -39,4 +40,4 @@ function Layout(){
   )
 }
 
-export default Layout
+
