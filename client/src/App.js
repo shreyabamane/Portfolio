@@ -19,6 +19,12 @@ function App() {
         <Contact />
       </div>
 
+      <div className="footer mb-3 ms-3">
+        <h4 className="text-center">
+          Made With ❤ Shreya &copy; 2024
+        </h4>
+      </div>
+
     </>
   );
 }
