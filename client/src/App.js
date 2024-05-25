@@ -1,4 +1,5 @@
 import ScrollToTop from "react-scroll-to-top";
+import Tada from 'react-reveal/Tada';
 
 import { Layout } from "./components/Layout/Layout";
 import { About } from "./pages/About/About";
@@ -25,9 +26,11 @@ function App() {
         </div>
 
         <div className="footer pb-3 ms-3">
+          <Tada>
           <h4 className="text-center">
             Made With ❤ Shreya &copy; 2024
           </h4>
+          </Tada>
         </div>
       </div>
 
