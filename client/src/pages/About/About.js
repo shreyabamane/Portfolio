@@ -6,7 +6,7 @@ import About_pic from '../../assets/images/shreya_about.png'
 export function About() {
     return (
         <>
-            <div className='about'>
+            <div className='about' id='about'>
                 <div className='row'>
                     <div className='col-md-6 col-xl-6 col-lg-6 col-xs-12 about-img'>
                         <img src={About_pic} alt='profile_pic' />

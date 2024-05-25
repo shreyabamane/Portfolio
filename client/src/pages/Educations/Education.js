@@ -8,7 +8,7 @@ import './Education.css'
 export function Education() {
     return (
         <>
-            <div className='education'>
+            <div className='education' id='education'>
                 <h2 className='col-12 mt- mb-1 text-center text-uppercase'>
                     Education Details
                 </h2>

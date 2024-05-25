@@ -1,3 +1,5 @@
+import ScrollToTop from "react-scroll-to-top";
+
 import { Layout } from "./components/Layout/Layout";
 import { About } from "./pages/About/About";
 import { Contact } from "./pages/Contact/Contact";
@@ -24,6 +26,12 @@ function App() {
           Made With ❤ Shreya &copy; 2024
         </h4>
       </div>
+
+      <ScrollToTop
+        smooth
+        color="#f29f67"
+        style={{ backgroundColor: '#1e1e2c', borderRadius: '80px' }}
+      />
 
     </>
   );

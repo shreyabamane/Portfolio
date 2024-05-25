@@ -5,7 +5,7 @@ import './Projects.css'
 export function Projects() {
     return (
         <>
-            <div className='container project'>
+            <div className='container project' id='project'>
                 <h2 className='col-12 mt- mb-1 text-center text-uppercase'>
                     Top Recent Projects
                 </h2>

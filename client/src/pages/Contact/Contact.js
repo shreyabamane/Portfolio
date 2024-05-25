@@ -7,7 +7,7 @@ import Contact_us from '../../assets/images/contact.avif';
 export function Contact() {
     return (
         <>
-            <div className='contact'>
+            <div className='contact' id='contact'>
                 <div className='card card0 border-0'>
                     <div className='row'>
                         <div className='col-md-6 col-lg-6 col-xl-6 col-sm-12'>
