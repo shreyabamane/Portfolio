@@ -25,3 +25,15 @@
     text-align: justify;
     padding: 20px;
 }
+
+/* Dark mode */
+
+#dark .about{
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+#dark .about-content{
+    color: #b0a4a4;
+    border-bottom: 2px solid #b0a4a4;
+}

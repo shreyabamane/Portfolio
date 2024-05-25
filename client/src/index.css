@@ -6,3 +6,10 @@
 }
 
 
+/* Dark Mode */
+
+#dark{
+  /* background-color: black; */
+  background-color: #5f264a;
+  color: #f4eee0;
+}
