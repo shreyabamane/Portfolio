@@ -8,6 +8,7 @@ import { Education } from "./pages/Educations/Education";
 import { Projects } from "./pages/Projects/Projects";
 import { Techstack } from "./pages/Techstack/Techstack";
 import { useTheme } from "./context/ThemeContext";
+import { MobileNav } from "./components/MobileNav/MobileNav";
 
 
 
@@ -16,6 +17,7 @@ function App() {
   return (
     <>
       <div id={theme}>
+        <MobileNav />
         <Layout />
         <div className="container">
           <About />
