@@ -10,7 +10,8 @@ import Contact_us from '../../assets/images/contact.avif';
 
 export function Contact() {
     
-    const [name, setName] = useState("");//same as controller request body
+    //same as controller request body
+    const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [msg, setMsg] = useState("")
 
