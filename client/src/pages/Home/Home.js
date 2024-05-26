@@ -41,7 +41,15 @@ export function Home() {
 
           <Fade bottom>
             <div className='home-buttons'>
-              <button className='btn btn-hire'>Hire Me</button>
+              <a
+                className='btn btn-hire'
+                href='https://api.whatsapp.com/send?phone=8263857678'
+                rel='noreferrer'
+                target='_blank'
+              >
+                Hire Me
+              </a>
+             
               <a className='btn btn-cv' href={Resume} download="Shreya_Bamane.pdf">My Resume</a>
             </div>
           </Fade>
