@@ -1,12 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import Rotate from 'react-reveal/Rotate';
 import LightSpeed from 'react-reveal/LightSpeed';
+import { toast } from 'react-toastify';
+import axios from 'axios';
 
 import './Contact.css';
 import Contact_us from '../../assets/images/contact.avif';
 
 export function Contact() {
+    
+    const [name, setName] = useState("");//same as controller request body
+    const [email, setEmail] = useState("");
+    const [msg, setMsg] = useState("")
+
+
+    //handle submit button
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        try {
+            if(!name || !email || !msg){
+                toast.error('Please provide all fields')
+            }
+            const res = await axios.post('/api/v1/portfolio/sendEmail', {name,email,msg})
+
+            //validation success
+            if(res.data.success){
+                toast.success(res.data.message);
+                setName("");
+                setEmail("");
+                setMsg("");
+            }
+            else{
+                toast.error(res.data.message);
+            }
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+
+
     return (
         <>
             <div className='contact' id='contact'>
@@ -46,6 +80,8 @@ export function Contact() {
                                                 name='name'
                                                 placeholder='Enter Your Name'
                                                 className='mb-3'
+                                                value={name}
+                                                onChange={(e) => setName(e.target.value)}
                                             />
                                         </div>
                                         <div className='row px-3'>
@@ -54,6 +90,8 @@ export function Contact() {
                                                 name='email'
                                                 placeholder='Enter Your Email Address'
                                                 className='mb-3'
+                                                value={email}
+                                                onChange={(e) => setEmail(e.target.value)}
                                             />
                                         </div>
                                         <div className='row px-3'>
@@ -62,11 +100,13 @@ export function Contact() {
                                                 name='msg'
                                                 placeholder='Write your Message'
                                                 className='mb-3'
+                                                value={msg}
+                                                onChange={(e) => setMsg(e.target.value)}
                                             />
                                         </div>
 
                                         <div className='row px-3'>
-                                            <button className='button' type='submit'>SEND MESSAGE</button>
+                                            <button className='button' onClick={handleSubmit}>SEND MESSAGE</button>
                                         </div>
                                     </div>
                                 </div>

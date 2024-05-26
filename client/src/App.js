@@ -1,5 +1,7 @@
 import ScrollToTop from "react-scroll-to-top";
 import Tada from 'react-reveal/Tada';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { Layout } from "./components/Layout/Layout";
 import { About } from "./pages/About/About";
@@ -17,6 +19,7 @@ function App() {
   return (
     <>
       <div id={theme}>
+        <ToastContainer />
         <MobileNav />
         <Layout />
         <div className="container">
