@@ -24,13 +24,13 @@ export function Home() {
         </div>
         <div className='container home-content'>
           <Fade right>
-            <h2>Hi 👋 I'm a </h2>
+            <h2>Hi 👋 I'm Shreya Bamane </h2>
             <h1>
               <Typewriter
                 options={{
                   strings: [
                     "Frontend Developer!",
-                    "Mern Stack Developer!"
+                    "UI Developer!"
                   ],
                   autoStart: true,
                   loop: true
